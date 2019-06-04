@@ -87,7 +87,7 @@ ArchimedeanSpiralDataSet(revolutions, scale, variance, samples, random_state)
     revoutions : int, optional (default=2)
         The number of revolutions of the spiral.
 
-    scale : float, optional (default=0.5)
+    scale : float, optional (default=1)
         A scaling factor to control the radius of each revolution.
 
     variance : float or list of floats of length 2, optional (default=0.0025)

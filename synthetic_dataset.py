@@ -166,7 +166,7 @@ def CircularGaussianDataSet(modes=8, radius=5, variance=0.0025, samples=10000, s
 
     return data
 
-def ArchimedeanSpiralDataSet(revolutions=2, scale=0.5, variance=0.0025, samples=10000, random_state=None):
+def ArchimedeanSpiralDataSet(revolutions=2, scale=1, variance=0.0025, samples=10000, random_state=None):
     """ Generate a Archimedean Spiral dataset.
 
     Parameters
@@ -174,7 +174,7 @@ def ArchimedeanSpiralDataSet(revolutions=2, scale=0.5, variance=0.0025, samples=
     revoutions : int, optional (default=2)
         The number of revolutions of the spiral.
 
-    scale : float, optional (default=0.5)
+    scale : float, optional (default=1)
         A scaling factor to control the radius of each revolution.
 
     variance : float or list of floats of length 2, optional (default=0.0025)
@@ -194,7 +194,7 @@ def ArchimedeanSpiralDataSet(revolutions=2, scale=0.5, variance=0.0025, samples=
     data : array of shape [samples, 2]
         The data points.
     """
-    
+
     # Input exceptions
     if type(variance) is list and len(variance) != 2:
         raise ValueError("Incorrect variance length. Should be a single scalar or list of length 2.")
@@ -206,7 +206,7 @@ def ArchimedeanSpiralDataSet(revolutions=2, scale=0.5, variance=0.0025, samples=
     ls = np.delete(ls, 0) # Remhttp://192.168.0.12/ove ls[0]=0
     for i in ls:
         theta = 2*revolutions*np.pi*np.sqrt(i)
-        r = scale*theta 
+        r = (scale/2)*theta 
         x = r*np.cos(theta)
         y = r*np.sin(theta)
         means.append([x,y])
