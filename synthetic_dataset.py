@@ -53,7 +53,7 @@ def GridGaussianDataset(rows=5, cols=5, grid_width=10, grid_height=10, variance=
     rows : int, optional (default=5)
     cols : int, optional (default=5)
         The number of rows/cols in the gaussian grid. Must be >1.
-        ie. rows=cols=5 produces a grid of 25 evenly spaced 2D gaussian distibutions.
+        ie. rows=cols=5 produces a grid of 25 evenly spaced 2D gaussian distributions.
 
     grid_width : int, optional (default=10)
     grid_height : int, optional (default=10)
@@ -70,7 +70,7 @@ def GridGaussianDataset(rows=5, cols=5, grid_width=10, grid_height=10, variance=
 
     sample_weights : list of floats of length cols*rows or None, optional (default=None)
         The proportion of samples drawn from each gaussian in column-row order (starting with top-left distribution).
-        If None then all distrubtions receive equal weighting. 
+        If None then all distributions receive equal weighting. 
 
     random_state : int or None, optional (default=None)
         Determines the RNG for the data sampling. Use for reproducible outputs.
@@ -132,7 +132,7 @@ def CircularGaussianDataSet(modes=8, radius=5, variance=0.0025, samples=10000, s
 
     sample_weights : list of floats of length cols*rows or None, optional (default=None)
         The proportion of samples drawn from each gaussian in counter-clockwise order (starting with the north-most distribution).
-        If None then all distrubtions receive equal weighting. 
+        If None then all distributions receive equal weighting. 
 
     random_state : int or None, optional (default=None)
         Determines the RNG for the data sampling. Use for reproducible outputs.
@@ -171,7 +171,7 @@ def ArchimedeanSpiralDataSet(revolutions=2, scale=1, variance=0.0025, samples=10
 
     Parameters
     ----------
-    revoutions : int, optional (default=2)
+    revolutions : int, optional (default=2)
         The number of revolutions of the spiral.
 
     scale : float, optional (default=1)
