@@ -39,7 +39,7 @@ def _sample(samples, means, cov, samples_per_mode, random_state):
         for i in range(len(data) - samples):
             data.remove(random.choice(data)) # Remove random sample
 
-    return data
+    return np.array(data)
 
 ##########################
 ### Synthetic Datasets ###
