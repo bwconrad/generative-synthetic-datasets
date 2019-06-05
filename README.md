@@ -5,6 +5,8 @@ A collection of python functions to generate synethic 2D distributions. These da
 - Python 3
 - numpy
 
+<img src=".imgs/defaults.png" />
+
 ## Distributions:
 ### Gaussian Grid
 ```python
