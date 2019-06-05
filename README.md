@@ -6,7 +6,7 @@ A collection of python functions to generate synethic 2D distributions. These da
 - numpy
 
 ## Distributions:
-### Grid Gaussian
+### Gaussian Grid
 ```python
 GridGaussianDataset(rows, cols grid_width, grid_height, variance, samples, sample_weights, random_state)
 ```
@@ -108,3 +108,27 @@ ArchimedeanSpiralDataSet(revolutions, scale, variance, samples, random_state)
         The data points.
         
 ## Examples
+```python
+from synthetic_dataset import GridGaussianDataset
+data1 = GridGaussianDataset()
+data2 = GridGaussianDataset(rows=3, cols=10, variance=0.1, grid_width=20, grid_height=10)
+data3 = GridGaussianDataset(rows=2, cols=2, grid_width=2, grid_height=2, sample_weights=[1,10,1,0.1])
+```
+<img src=".imgs/grid.png" />
+
+```python
+from synthetic_dataset import CircularGaussianDataSet
+data1 = CircularGaussianDataSet()
+data2 = CircularGaussianDataSet(modes=15, radius=10)
+data3 = CircularGaussianDataSet(modes=4, variance=[0.0025, 0.1])
+```
+<img src=".imgs/circle.png" />
+
+```python
+from synthetic_dataset import ArchimedeanSpiralDataSet
+data1 = ArchimedeanSpiralDataSet()
+data2 = ArchimedeanSpiralDataSet(revolutions=5)
+data3 = ArchimedeanSpiralDataSet(scale=3, variance=0.00025)
+```
+<img src=".imgs/spiral.png" />
+
