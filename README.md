@@ -1,5 +1,5 @@
-# GAN-Synthetic-Datasets
-A collection of python functions to generate synethic 2D distributions. These datasets are commonly used for evaluating the degree of mode collaps and learning capabilities of GAN generators.
+# Synthetic Datasets for Genterative Adversarial Networks
+A collection of python functions to generate synethic 2D distributions. These datasets are commonly used for evaluating the degree of mode collapse and learning capabilities of GAN generators.
 
 ## Requirements:
 - Python 3
