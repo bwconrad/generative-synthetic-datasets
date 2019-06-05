@@ -1,5 +1,5 @@
 # Synthetic Datasets for Genterative Adversarial Networks
-A collection of python functions to generate synethic 2D distributions. These datasets are commonly used for evaluating the degree of mode collapse and learning capabilities of GAN generators.
+A collection of python functions to generate synthetic 2D distributions. These datasets are commonly used for evaluating the degree of mode collapse and learning capabilities of GAN generators.
 
 <img src=".imgs/defaults.png" />
 
@@ -19,7 +19,7 @@ GridGaussianDataset(rows, cols grid_width, grid_height, variance, samples, sampl
     rows : int, optional (default=5)
     cols : int, optional (default=5)
         The number of rows/cols in the gaussian grid. Must be >1.
-        ie. rows=cols=5 produces a grid of 25 evenly spaced 2D gaussian distibutions.
+        ie. rows=cols=5 produces a grid of 25 evenly spaced 2D gaussian distributions.
 
     grid_width : int, optional (default=10)
     grid_height : int, optional (default=10)
@@ -36,7 +36,7 @@ GridGaussianDataset(rows, cols grid_width, grid_height, variance, samples, sampl
 
     sample_weights : list of floats of length cols*rows or None, optional (default=None)
         The proportion of samples drawn from each gaussian in column-row order (starting with top-left distribution).
-        If None then all distrubtions receive equal weighting. 
+        If None then all distributions receive equal weighting. 
 
     random_state : int or None, optional (default=None)
         Determines the RNG for the data sampling. Use for reproducible outputs.
@@ -70,7 +70,7 @@ CircularGaussianDataSet(modes, radius, variance, samples, sample_weights, random
 
     sample_weights : list of floats of length cols*rows or None, optional (default=None)
         The proportion of samples drawn from each gaussian in counter-clockwise order (starting with the north-most distribution).
-        If None then all distrubtions receive equal weighting. 
+        If None then all distributions receive equal weighting. 
 
     random_state : int or None, optional (default=None)
         Determines the RNG for the data sampling. Use for reproducible outputs.
@@ -87,7 +87,7 @@ ArchimedeanSpiralDataSet(revolutions, scale, variance, samples, random_state)
 ```
     Parameters
     ----------
-    revoutions : int, optional (default=2)
+    revolutions : int, optional (default=2)
         The number of revolutions of the spiral.
 
     scale : float, optional (default=1)
