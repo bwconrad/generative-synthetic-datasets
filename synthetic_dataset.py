@@ -203,7 +203,7 @@ def ArchimedeanSpiralDataSet(revolutions=2, scale=1, variance=0.0025, samples=10
     means = []
     pts = 2000
     ls = np.linspace(0,1,pts+1)
-    ls = np.delete(ls, 0) # Remhttp://192.168.0.12/ove ls[0]=0
+    ls = np.delete(ls, 0) # Remove ls[0]=0
     for i in ls:
         theta = 2*revolutions*np.pi*np.sqrt(i)
         r = (scale/2)*theta 
